@@ -1,0 +1,10 @@
+<div class="card mt-2"*ngFor="let  task of currentTasks; let i = index">
+    <div class="card-body">
+       taskname : {{task.name}}
+       <p>{{task.date}}</p>
+   <button class="btn btn-success"(click)="move(i)">move to Done</button>
+
+       
+    </div>
+    </div>
+    

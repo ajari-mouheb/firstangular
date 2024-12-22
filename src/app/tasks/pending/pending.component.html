@@ -1,0 +1,8 @@
+<div class="card mt-2"*ngFor="let  task of PendingTasks;let i = index">
+<div class="card-body">
+   taskname : {{task.name}}
+   <p>{{task.date}}</p>
+   <button class="btn btn-success"(click)="move(i)">move to current</button>
+   <button class="btn btn-info" (click)="edittask(i)">edit</button>
+</div>
+</div>
